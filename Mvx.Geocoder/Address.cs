@@ -28,11 +28,6 @@ namespace MvxPlugins.Geocoder
 
 		public string AddressLine { get; set; }
 
-		// TODO Does this property needed at all?
-		public string FormattedAddress { get; set; }
-
-		// TODO Add more fields
-
 		public Address ()
 		{
 		}

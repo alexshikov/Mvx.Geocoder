@@ -40,7 +40,6 @@ namespace MvxPlugins.Geocoder.Touch
 				SubAdministrativeArea = placemark.SubAdministrativeArea,
 
 				AddressLine = addressLine,
-				FormattedAddress = ABAddressFormatting.ToString (placemark.AddressDictionary, /* addCountryName: */true),
 			};
 		}
 	}
