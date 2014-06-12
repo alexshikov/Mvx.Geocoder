@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder", "Mvx.Geocoder\Mvx.Geocoder.csproj", "{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder.Touch", "Mvx.Geocoder.Touch\Mvx.Geocoder.Touch.csproj", "{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Mvx.Geocoder\Mvx.Geocoder.csproj
+	EndGlobalSection
+EndGlobal
