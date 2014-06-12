@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Mvx.Geocoder
+namespace MvxPlugins.Geocoder
 {
 	public interface IGeocoder
 	{

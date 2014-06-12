@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mvx.Geocoder
+namespace MvxPlugins.Geocoder
 {
 	public class Address
 	{

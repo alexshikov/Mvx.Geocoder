@@ -1,7 +1,7 @@
 ﻿using System;
 using Cirrious.CrossCore.Plugins;
 
-namespace Mvx.Geocoder.Touch
+namespace MvxPlugins.Geocoder.Touch
 {
 	public class Plugin
 		: IMvxPlugin

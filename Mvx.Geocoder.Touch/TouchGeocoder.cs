@@ -2,7 +2,7 @@
 using MonoTouch.CoreLocation;
 using System.Linq;
 
-namespace Mvx.Geocoder.Touch
+namespace MvxPlugins.Geocoder.Touch
 {
 	public class TouchGeocoder: IGeocoder
 	{
