@@ -19,12 +19,25 @@ namespace MvxPlugins.Geocoder.Droid
 
 		private static Address Convert (Android.Locations.Address address)
 		{
+			// TODO improve formatted address
+			string addressLine = address.GetAddressLine (0);
+			var formattedAddress = string.Format ("{0}, {1}, {2}", addressLine, address.Locality, address.CountryName);
+
 			return new Address () {
 				Latitude = address.Latitude,
 				Longitude = address.Longitude,
 				Name = address.FeatureName,
 				Country = address.CountryName,
 				PostalCode = address.PostalCode,
+				Locality = address.Locality,
+				SubLocality = address.SubLocality,
+				Thoroughfare = address.Thoroughfare,
+				SubThoroughfare = address.SubThoroughfare,
+				AdministrativeArea = address.AdminArea,
+				SubAdministrativeArea = address.SubAdminArea,
+
+				AddressLine = addressLine,
+				FormattedAddress = formattedAddress,
 			};
 		}
 	}

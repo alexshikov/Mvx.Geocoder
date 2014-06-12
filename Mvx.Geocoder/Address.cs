@@ -14,6 +14,23 @@ namespace MvxPlugins.Geocoder
 
 		public string PostalCode { get; set; }
 
+		public string Locality { get; set; }
+
+		public string SubLocality { get; set; }
+
+		public string Thoroughfare { get; set; }
+
+		public string SubThoroughfare { get; set; }
+
+		public string AdministrativeArea { get; set; }
+
+		public string SubAdministrativeArea { get; set; }
+
+		public string AddressLine { get; set; }
+
+		// TODO Does this property needed at all?
+		public string FormattedAddress { get; set; }
+
 		// TODO Add more fields
 
 		public Address ()
