@@ -1,9 +1,9 @@
 ﻿using Cirrious.CrossCore.Plugins;
+using MvxPlugins.Geocoder;
 
-namespace MvxPlugins.Geocoder.WindowsPhone
+namespace Mvx.Geocoder.WindowsPhone
 {
-    public class Plugin
-        : IMvxPlugin
+    public class Plugin : IMvxPlugin
     {
         public void Load()
         {

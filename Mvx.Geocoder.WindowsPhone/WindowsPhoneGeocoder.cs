@@ -2,8 +2,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Phone.Maps.Services;
+using MvxPlugins.Geocoder;
 
-namespace MvxPlugins.Geocoder.WindowsPhone
+namespace Mvx.Geocoder.WindowsPhone
 {
     public class WindowsPhoneGeocoder : IGeocoder
     {

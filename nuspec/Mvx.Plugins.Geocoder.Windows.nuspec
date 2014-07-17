@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Mvx.Plugins.Geocoder</id>
-		<version>1.0.4</version>
+		<version>1.0.5.3</version>
 		<title>MvvmCross - Geocoder Plugin</title>
 		<authors>SeeD-Seifer</authors>
 		<owners>SeeD-Seifer</owners>
@@ -31,7 +31,7 @@
 
 		<!-- phone -->
 		<file src="..\Mvx.Geocoder\bin\Release\Mvx.Geocoder.dll" target="lib\wp8\Mvx.Geocoder.dll" />
-		<file src="..\Mvx.Geocoder.WindowsPhone\bin\Release\Mvx.Geocoder.WindowsPhone.dll" target="lib\wp8\Mvx.Geocoder.WindowsPhone.dll" />
+		<file src="..\Mvx.Geocoder.WindowsPhone\bin\Release\MvxPlugins.Geocoder.WindowsPhone.dll" target="lib\wp8\MvxPlugins.Geocoder.WindowsPhone.dll" />
 		<file src="WindowsPhoneBootstrapContent\GeocoderPluginBootstrap.cs.pp" target="content\wp8\Bootstrap\GeocoderPluginBootstrap.cs.pp" />
 	</files>
 </package>

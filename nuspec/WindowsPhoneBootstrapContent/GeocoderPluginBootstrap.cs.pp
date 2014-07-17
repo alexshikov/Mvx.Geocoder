@@ -2,8 +2,7 @@ using Cirrious.CrossCore.Plugins;
 
 namespace $rootnamespace$.Bootstrap
 {
-	public class GeocoderPluginBootstrap
-		: MvxLoaderPluginBootstrapAction<MvxPlugins.Geocoder.PluginLoader, MvxPlugins.Geocoder.WindowsPhone.Plugin>
+	public class GeocoderPluginBootstrap : MvxPluginBootstrapAction<MvxPlugins.Geocoder.PluginLoader>
 	{
 	}
 }

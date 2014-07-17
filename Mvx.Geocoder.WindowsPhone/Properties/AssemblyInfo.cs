@@ -6,11 +6,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MvxPlugins.Geocoder.WindowsPhone")]
+[assembly: AssemblyTitle("Mvx.Geocoder.WindowsPhone")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MvxPlugins.Geocoder.WindowsPhone")]
+[assembly: AssemblyProduct("Mvx.Geocoder.WindowsPhone")]
 [assembly: AssemblyCopyright("Copyright © Zsolt Varadi 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
