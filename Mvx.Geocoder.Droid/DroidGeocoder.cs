@@ -17,6 +17,11 @@ namespace MvxPlugins.Geocoder.Droid
 			return addresses.Select (Convert).ToArray ();
 		}
 
+        public async Task<Coordinates[]> GetCoordinatesAsync (string addressString)
+        {
+            throw new Exception("Not implemented exception");
+        }
+
 		private static Address Convert (Android.Locations.Address address)
 		{
 			string addressLine = address.GetAddressLine (0);
