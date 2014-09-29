@@ -17,9 +17,14 @@ namespace MvxPlugins.Geocoder.Droid
 			return addresses.Select (Convert).ToArray ();
 		}
 
-        public async Task<Coordinates[]> GetCoordinatesAsync (string addressString)
+		public async Task<Address[]> GetAddressesAsync (string addressString)
         {
-            throw new Exception("Not implemented exception");
+			var globals = Mvx.Resolve<Cirrious.CrossCore.Droid.IMvxAndroidGlobals>();
+			var geocoder = new Android.Locations.Geocoder (globals.ApplicationContext);
+
+			var addresses = await geocoder.GetFromLocationNameAsync (addressString, 10);
+
+			return addresses.Select (Convert).ToArray ();
         }
 
 		private static Address Convert (Android.Locations.Address address)

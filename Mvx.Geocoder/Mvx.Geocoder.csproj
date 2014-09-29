@@ -34,7 +34,6 @@
     <Compile Include="IGeocoder.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Address.cs" />
-    <Compile Include="Coordinates.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
