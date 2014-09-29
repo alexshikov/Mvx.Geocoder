@@ -13,17 +13,17 @@ namespace MvxPlugins.Geocoder.Touch
 		{
 			var geocoder = new CLGeocoder ();
 			var placemarks = await geocoder.ReverseGeocodeLocationAsync (new CLLocation (latitude, longitude));
-			return placemarks.Select (ConvertPlacemarkToAddress).ToArray ();
+			return placemarks.Select (Convert).ToArray ();
 		}
 
-        public async Task<Coordinates[]> GetCoordinatesAsync (string addressString)
+		public async Task<Address[]> GetAddressesAsync (string addressString)
         {
             var geocoder = new CLGeocoder ();
             var placemarks = await geocoder.GeocodeAddressAsync(addressString);
-            return placemarks.Select (ConvertPlacemarkToCoordinates).ToArray ();
+			return placemarks.Select (Convert).ToArray ();
         }
 
-		private static Address ConvertPlacemarkToAddress (CLPlacemark placemark)
+		private static Address Convert (CLPlacemark placemark)
 		{
 			string addressLine = null;
 
@@ -49,15 +49,6 @@ namespace MvxPlugins.Geocoder.Touch
 				AddressLine = addressLine,
 			};
 		}
-
-        private static Coordinates ConvertPlacemarkToCoordinates(CLPlacemark placemark)
-        {
-            return new Coordinates
-            {
-                Latitude = placemark.Location.Coordinate.Latitude,
-                Longitude = placemark.Location.Coordinate.Longitude
-            };
-        }
 	}
 }
 

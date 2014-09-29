@@ -30,7 +30,7 @@ namespace Mvx.Geocoder.WindowsPhone
             return tcs.Task;
         }
 
-        public async Task<Coordinates[]> GetCoordinatesAsync (string addressString)
+		public async Task<Address[]> GetAddressesAsync (string addressString)
         {
             throw new Exception("Not implemented exception");
         }
