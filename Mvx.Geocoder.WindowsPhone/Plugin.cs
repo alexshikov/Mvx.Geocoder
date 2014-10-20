@@ -1,5 +1,4 @@
 ﻿using Cirrious.CrossCore.Plugins;
-using MvxPlugins.Geocoder;
 
 namespace Mvx.Geocoder.WindowsPhone
 {

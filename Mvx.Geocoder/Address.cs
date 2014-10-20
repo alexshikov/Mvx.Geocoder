@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MvxPlugins.Geocoder
+﻿namespace Mvx.Geocoder
 {
 	public class Address
 	{
@@ -27,10 +25,6 @@ namespace MvxPlugins.Geocoder
 		public string SubAdministrativeArea { get; set; }
 
 		public string AddressLine { get; set; }
-
-		public Address ()
-		{
-		}
 	}
 }
 

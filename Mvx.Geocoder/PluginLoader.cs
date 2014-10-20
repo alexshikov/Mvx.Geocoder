@@ -1,6 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
 
-namespace MvxPlugins.Geocoder
+namespace Mvx.Geocoder
 {
 	public class PluginLoader: IMvxPluginLoader
 	{
