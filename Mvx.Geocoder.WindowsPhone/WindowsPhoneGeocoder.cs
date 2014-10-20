@@ -30,6 +30,11 @@ namespace Mvx.Geocoder.WindowsPhone
             return tcs.Task;
         }
 
+		public async Task<Address[]> GetAddressesAsync (string addressString)
+        {
+            throw new Exception("Not implemented exception");
+        }
+
         private Address ConvertMapLocation(MapLocation location)
         {
             return new Address

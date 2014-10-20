@@ -16,6 +16,13 @@ namespace MvxPlugins.Geocoder.Touch
 			return placemarks.Select (Convert).ToArray ();
 		}
 
+		public async Task<Address[]> GetAddressesAsync (string addressString)
+        {
+            var geocoder = new CLGeocoder ();
+            var placemarks = await geocoder.GeocodeAddressAsync(addressString);
+			return placemarks.Select (Convert).ToArray ();
+        }
+
 		private static Address Convert (CLPlacemark placemark)
 		{
 			string addressLine = null;
