@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Mvx.Plugins.Geocoder</id>
-		<version>1.0.5.3</version>
+		<version>1.0.5.4</version>
 		<title>MvvmCross - Geocoder Plugin</title>
 		<authors>SeeD-Seifer</authors>
 		<owners>SeeD-Seifer</owners>
@@ -21,7 +21,7 @@
 
 		<!-- droid -->
 		<file src="../Mvx.Geocoder/bin/Release/Mvx.Geocoder.dll" target="lib/MonoAndroid/Mvx.Geocoder.dll" />
-		<file src="../Mvx.Geocoder.Droid/bin/Release/Mvx.Geocoder.Droid.dll" target="lib/MonoAndroid/Mvx.Geocoder.Droid.dll" />
+		<file src="../Mvx.Geocoder.Droid/bin/Release/MvxPlugins.Geocoder.Droid.dll" target="lib/MonoAndroid/MvxPlugins.Geocoder.Droid.dll" />
         <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoAndroid/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
 		<!-- touch -->
