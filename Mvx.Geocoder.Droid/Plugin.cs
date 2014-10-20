@@ -1,15 +1,13 @@
-﻿using System;
-using Cirrious.CrossCore.Plugins;
-using Cirrious.CrossCore;
+﻿using Cirrious.CrossCore.Plugins;
 
-namespace MvxPlugins.Geocoder.Droid
+namespace Mvx.Geocoder.Droid
 {
-	public class Plugin
-		: IMvxPlugin
-	{
-		public void Load()
-		{
-			Mvx.RegisterSingleton<IGeocoder>(new DroidGeocoder ());
-		}
-	}
+    public class Plugin
+        : IMvxPlugin
+    {
+        public void Load()
+        {
+            Cirrious.CrossCore.Mvx.RegisterSingleton<IGeocoder>(new DroidGeocoder());
+        }
+    }
 }
