@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Mvx.Plugins.Geocoder</id>
-		<version>1.0.6</version>
+		<version>1.0.6.2</version>
 		<title>MvvmCross - Geocoder Plugin</title>
 		<authors>SeeD-Seifer</authors>
 		<owners>SeeD-Seifer</owners>
