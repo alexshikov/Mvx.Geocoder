@@ -8,31 +8,16 @@ namespace Mvx.Geocoder.WindowsPhone
 {
     public class WindowsPhoneGeocoder : IGeocoder
     {
-        public Task<Address[]> GetAddressesAsync(double latitude, double longitude)
+        public async Task<Address[]> GetAddressesAsync(double latitude, double longitude)
         {
-            var tcs = new TaskCompletionSource<Address[]>();
-            var query = new ReverseGeocodeQuery();
-
-            query.GeoCoordinate = new GeoCoordinate(latitude, longitude);
-            query.QueryCompleted += (sender, args) =>
-                                    {
-                                        if (args.Error != null)
-                                        {
-                                            tcs.TrySetException(args.Error);
-                                        }
-                                        else
-                                        {
-                                            var addresses = args.Result.Select(ConvertMapLocation).ToArray();
-                                            tcs.TrySetResult(addresses);
-                                        }
-                                    };
-            query.QueryAsync();
-            return tcs.Task;
+            var result = await new ReverseGeocodeQuery { GeoCoordinate = new GeoCoordinate(latitude, longitude) }.ExecuteAsync();
+            return result.Select(ConvertMapLocation).ToArray();
         }
 
-		public async Task<Address[]> GetAddressesAsync (string addressString)
+        public async Task<Address[]> GetAddressesAsync(string addressString)
         {
-            throw new Exception("Not implemented exception");
+            var result = await new GeocodeQuery { SearchTerm = addressString }.ExecuteAsync();
+            return result.Select(ConvertMapLocation).ToArray();
         }
 
         private Address ConvertMapLocation(MapLocation location)
