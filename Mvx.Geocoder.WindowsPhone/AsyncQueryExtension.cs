@@ -2,7 +2,11 @@
 using System.Threading.Tasks;
 using Microsoft.Phone.Maps.Services;
 
+<<<<<<< HEAD
 namespace MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone
+=======
+namespace Mvx.Geocoder.WindowsPhone
+>>>>>>> Implemented forward geocoding for Windows Phone.
 {
     public static class AsyncQueryExtension
     {
