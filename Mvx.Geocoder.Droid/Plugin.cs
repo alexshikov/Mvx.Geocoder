@@ -1,6 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
 
-namespace Mvx.Geocoder.Droid
+namespace MvvmCross.HotTuna.Plugins.Geocoder.Droid
 {
     public class Plugin
         : IMvxPlugin
