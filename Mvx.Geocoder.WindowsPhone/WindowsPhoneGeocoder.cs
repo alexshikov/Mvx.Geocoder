@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Phone.Maps.Services;
 
-namespace Mvx.Geocoder.WindowsPhone
+namespace MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone
 {
     public class WindowsPhoneGeocoder : IGeocoder
     {

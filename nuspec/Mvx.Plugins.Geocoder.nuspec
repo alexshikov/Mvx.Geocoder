@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-	<metadata>
-		<id>Mvx.Plugins.Geocoder</id>
-		<version>1.0.6.3</version>
-		<title>MvvmCross - Geocoder Plugin</title>
-		<authors>SeeD-Seifer</authors>
-		<owners>SeeD-Seifer</owners>
-		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-		<projectUrl>https://github.com/SeeD-Seifer/Mvx.Geocoder</projectUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>This package contains the 'Geocoder' plugin for MvvmCross v3 - Hot Tuna.</description>
-		<tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
-		<dependencies>
-		  <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
-		</dependencies>
-	</metadata>
-	<files>		
-		<!-- PCL -->
-		<file src="../Mvx.Geocoder/bin/Release/Mvx.Geocoder.dll" target="lib/portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch/Mvx.Geocoder.dll" />
+  <metadata>
+    <id>Mvx.Plugins.Geocoder</id>
+    <version>1.0.7</version>
+    <title>MvvmCross - Geocoder Plugin</title>
+    <authors>SeeD-Seifer</authors>
+    <owners>SeeD-Seifer</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/SeeD-Seifer/Mvx.Geocoder</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains the 'Geocoder' plugin for MvvmCross v3 - Hot Tuna.</description>
+    <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
+    <dependencies>
+      <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- PCL -->
+    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
 
-		<!-- droid -->
-		<file src="../Mvx.Geocoder/bin/Release/Mvx.Geocoder.dll" target="lib/MonoAndroid/Mvx.Geocoder.dll" />
-		<file src="../Mvx.Geocoder.Droid/bin/Release/Mvx.Geocoder.Droid.dll" target="lib/MonoAndroid/Mvx.Geocoder.Droid.dll" />
-        <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoAndroid/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
+    <!-- droid -->
+    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/MonoAndroid/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.Droid/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.Droid.dll" target="lib/MonoAndroid/MvvmCross.HotTuna.Plugins.Geocoder.Droid.dll" />
+    <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoAndroid/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
-		<!-- touch -->
-		<file src="../Mvx.Geocoder/bin/Release/Mvx.Geocoder.dll" target="lib/MonoTouch/Mvx.Geocoder.dll" />
-		<file src="../Mvx.Geocoder.Touch/bin/Release/Mvx.Geocoder.Touch.dll" target="lib/MonoTouch/Mvx.Geocoder.Touch.dll" />
-		<file src="TouchBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoTouch/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
+    <!-- touch -->
+    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/MonoTouch/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.Touch/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.Touch.dll" target="lib/MonoTouch/MvvmCross.HotTuna.Plugins.Geocoder.Touch.dll" />
+    <file src="TouchBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoTouch/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
-		<!-- phone -->
-		<file src="../Mvx.Geocoder/bin/Release/Mvx.Geocoder.dll" target="lib/wp8/Mvx.Geocoder.dll" />
-		<file src="../Mvx.Geocoder.WindowsPhone/bin/Release/Mvx.Geocoder.WindowsPhone.dll" target="lib/wp8/Mvx.Geocoder.WindowsPhone.dll" />
-		<file src="WindowsPhoneBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/wp8/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
-	</files>
+    <!-- phone -->
+    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/wp8/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.WindowsPhone/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone.dll" target="lib/wp8/MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone.dll" />
+    <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/wp8/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
+  </files>
 </package>
