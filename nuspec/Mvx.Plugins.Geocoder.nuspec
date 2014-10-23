@@ -17,21 +17,21 @@
   </metadata>
   <files>
     <!-- PCL -->
-    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch/MvxPlugins.Geocoder.dll" />
 
     <!-- droid -->
-    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/MonoAndroid/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
-    <file src="../Mvx.Geocoder.Droid/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.Droid.dll" target="lib/MonoAndroid/MvvmCross.HotTuna.Plugins.Geocoder.Droid.dll" />
+    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/MonoAndroid/MvxPlugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.Droid/bin/Release/MvxPlugins.Geocoder.Droid.dll" target="lib/MonoAndroid/MvxPlugins.Geocoder.Droid.dll" />
     <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoAndroid/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
     <!-- touch -->
-    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/MonoTouch/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
-    <file src="../Mvx.Geocoder.Touch/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.Touch.dll" target="lib/MonoTouch/MvvmCross.HotTuna.Plugins.Geocoder.Touch.dll" />
+    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/MonoTouch/MvxPlugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.Touch/bin/Release/MvxPlugins.Geocoder.Touch.dll" target="lib/MonoTouch/MvxPlugins.Geocoder.Touch.dll" />
     <file src="TouchBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoTouch/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
     <!-- phone -->
-    <file src="../Mvx.Geocoder/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.dll" target="lib/wp8/MvvmCross.HotTuna.Plugins.Geocoder.dll" />
-    <file src="../Mvx.Geocoder.WindowsPhone/bin/Release/MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone.dll" target="lib/wp8/MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone.dll" />
+    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/wp8/MvxPlugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.WindowsPhone/bin/Release/MvxPlugins.Geocoder.WindowsPhone.dll" target="lib/wp8/MvxPlugins.Geocoder.WindowsPhone.dll" />
     <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/wp8/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
   </files>
 </package>
