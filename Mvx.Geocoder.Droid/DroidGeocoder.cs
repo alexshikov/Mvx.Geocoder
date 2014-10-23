@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 
-namespace MvvmCross.HotTuna.Plugins.Geocoder.Droid
+namespace MvxPlugins.Geocoder.Droid
 {
     public class DroidGeocoder : IGeocoder
     {

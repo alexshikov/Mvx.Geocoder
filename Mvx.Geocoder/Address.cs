@@ -1,4 +1,4 @@
-﻿namespace MvvmCross.HotTuna.Plugins.Geocoder
+﻿namespace MvxPlugins.Geocoder
 {
 	public class Address
 	{

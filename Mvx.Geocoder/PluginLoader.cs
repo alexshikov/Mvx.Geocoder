@@ -1,6 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
 
-namespace MvvmCross.HotTuna.Plugins.Geocoder
+namespace MvxPlugins.Geocoder
 {
 	public class PluginLoader: IMvxPluginLoader
 	{
