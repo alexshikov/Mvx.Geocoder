@@ -1,6 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
 
-namespace MvvmCross.HotTuna.Plugins.Geocoder.Touch
+namespace MvxPlugins.Geocoder.Touch
 {
     public class Plugin
         : IMvxPlugin
