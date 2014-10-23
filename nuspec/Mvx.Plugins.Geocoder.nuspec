@@ -12,7 +12,7 @@
     <description>This package contains the 'Geocoder' plugin for MvvmCross v3 - Hot Tuna.</description>
     <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
     <dependencies>
-      <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1" />
+      <dependency id="MvvmCross.HotTuna.CrossCore" version="3.2.1" />
     </dependencies>
   </metadata>
   <files>
