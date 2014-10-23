@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MvvmCross.HotTuna.Plugins.Geocoder
+namespace MvxPlugins.Geocoder
 {
 	public interface IGeocoder
 	{

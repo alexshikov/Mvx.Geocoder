@@ -4,7 +4,7 @@ using MonoTouch.AddressBook;
 using MonoTouch.CoreLocation;
 using MonoTouch.Foundation;
 
-namespace MvvmCross.HotTuna.Plugins.Geocoder.Touch
+namespace MvxPlugins.Geocoder.Touch
 {
     public class TouchGeocoder : IGeocoder
     {
