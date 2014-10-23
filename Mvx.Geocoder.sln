@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder", "Mvx.Geocoder\Mvx.Geocoder.csproj", "{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}"
 EndProject
@@ -10,6 +10,24 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder.Droid", "Mvx.Geocoder.Droid\Mvx.Geocoder.Droid.csproj", "{62F3258C-1E53-4510-BF27-E3AA0D355F2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder.WindowsPhone", "Mvx.Geocoder.WindowsPhone\Mvx.Geocoder.WindowsPhone.csproj", "{55063605-809A-4E0D-82A5-754F2ECAB9AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{68BE70A5-FFAE-4CE0-9318-CC87F4121119}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\Mvx.Plugins.Geocoder.nuspec = nuspec\Mvx.Plugins.Geocoder.nuspec
+		nuspec\Mvx.Plugins.Geocoder.Windows.nuspec = nuspec\Mvx.Plugins.Geocoder.Windows.nuspec
+		nuspec\pack.sh = nuspec\pack.sh
+		nuspec\push.sh = nuspec\push.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BootstrapContent", "BootstrapContent", "{E5D6699C-D0E2-4D0C-86F5-AD0CD995FF9D}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\BootstrapContent\GeocoderPluginBootstrap.cs.pp = nuspec\BootstrapContent\GeocoderPluginBootstrap.cs.pp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TouchBootstrapContent", "TouchBootstrapContent", "{5C39F976-E622-4062-8DC4-2D7760D461DF}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\TouchBootstrapContent\GeocoderPluginBootstrap.cs.pp = nuspec\TouchBootstrapContent\GeocoderPluginBootstrap.cs.pp
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,13 +92,17 @@ Global
 		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|ARM.ActiveCfg = Release|ARM
 		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|ARM.Build.0 = Release|ARM
-		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|Mixed Platforms.Build.0 = Release|x86
+		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|x86.ActiveCfg = Release|x86
 		{55063605-809A-4E0D-82A5-754F2ECAB9AD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5D6699C-D0E2-4D0C-86F5-AD0CD995FF9D} = {68BE70A5-FFAE-4CE0-9318-CC87F4121119}
+		{5C39F976-E622-4062-8DC4-2D7760D461DF} = {68BE70A5-FFAE-4CE0-9318-CC87F4121119}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Mvx.Geocoder\Mvx.Geocoder.csproj

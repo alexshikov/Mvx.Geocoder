@@ -1,10 +1,10 @@
-﻿using System.Device.Location;
+﻿using System;
+using System.Device.Location;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Phone.Maps.Services;
-using MvxPlugins.Geocoder;
 
-namespace Mvx.Geocoder.WindowsPhone
+namespace MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone
 {
     public class WindowsPhoneGeocoder : IGeocoder
     {

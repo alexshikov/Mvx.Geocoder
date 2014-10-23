@@ -1,15 +1,14 @@
-﻿using System;
-using Cirrious.CrossCore.Plugins;
+﻿using Cirrious.CrossCore.Plugins;
 
-namespace MvxPlugins.Geocoder.Touch
+namespace MvvmCross.HotTuna.Plugins.Geocoder.Touch
 {
-	public class Plugin
-		: IMvxPlugin
-	{
-		public void Load()
-		{
-			Cirrious.CrossCore.Mvx.RegisterSingleton<IGeocoder>(new TouchGeocoder ());
-		}
-	}    
+    public class Plugin
+        : IMvxPlugin
+    {
+        public void Load()
+        {
+            Cirrious.CrossCore.Mvx.RegisterSingleton<IGeocoder>(new TouchGeocoder());
+        }
+    }
 }
 

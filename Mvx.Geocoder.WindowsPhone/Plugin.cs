@@ -1,7 +1,6 @@
 ﻿using Cirrious.CrossCore.Plugins;
-using MvxPlugins.Geocoder;
 
-namespace Mvx.Geocoder.WindowsPhone
+namespace MvvmCross.HotTuna.Plugins.Geocoder.WindowsPhone
 {
     public class Plugin : IMvxPlugin
     {
