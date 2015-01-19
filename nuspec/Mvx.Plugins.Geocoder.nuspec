@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mvx.Plugins.Geocoder</id>
-    <version>1.0.7</version>
+    <version>1.1.0</version>
     <title>MvvmCross - Geocoder Plugin</title>
     <authors>SeeD-Seifer</authors>
     <owners>SeeD-Seifer</owners>
@@ -12,12 +12,12 @@
     <description>This package contains the 'Geocoder' plugin for MvvmCross v3 - Hot Tuna.</description>
     <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
     <dependencies>
-      <dependency id="MvvmCross.HotTuna.CrossCore" version="3.2.1" />
+      <dependency id="MvvmCross.HotTuna.CrossCore" version="3.5.0" />
     </dependencies>
   </metadata>
   <files>
     <!-- PCL -->
-    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch/MvxPlugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/portable-win+net45+wp8+win8+wpa81/MvxPlugins.Geocoder.dll" />
 
     <!-- droid -->
     <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/MonoAndroid/MvxPlugins.Geocoder.dll" />
@@ -25,9 +25,9 @@
     <file src="BootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoAndroid/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
     <!-- touch -->
-    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/MonoTouch/MvxPlugins.Geocoder.dll" />
-    <file src="../Mvx.Geocoder.Touch/bin/Release/MvxPlugins.Geocoder.Touch.dll" target="lib/MonoTouch/MvxPlugins.Geocoder.Touch.dll" />
-    <file src="TouchBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/MonoTouch/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
+    <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/Xamarin.iOS10/MvxPlugins.Geocoder.dll" />
+    <file src="../Mvx.Geocoder.Touch/bin/Release/MvxPlugins.Geocoder.Touch.dll" target="lib/Xamarin.iOS10/MvxPlugins.Geocoder.Touch.dll" />
+    <file src="TouchBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/Xamarin.iOS10/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
     <!-- phone -->
     <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/wp8/MvxPlugins.Geocoder.dll" />
