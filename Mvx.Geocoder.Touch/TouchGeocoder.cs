@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using MonoTouch.AddressBook;
-using MonoTouch.CoreLocation;
-using MonoTouch.Foundation;
+using AddressBook;
+using CoreLocation;
+using Foundation;
 
 namespace MvxPlugins.Geocoder.Touch
 {
