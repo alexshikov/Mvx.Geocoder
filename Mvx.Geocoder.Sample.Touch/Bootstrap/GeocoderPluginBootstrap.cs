@@ -1,0 +1,11 @@
+﻿using System;
+using Cirrious.CrossCore.Plugins;
+
+namespace Mvx.Geocoder.Sample.Touch.Bootstrap
+{
+	public class GeocoderPluginBootstrap
+		: MvxLoaderPluginBootstrapAction<MvxPlugins.Geocoder.PluginLoader, MvxPlugins.Geocoder.Touch.Plugin>
+	{
+	}
+}
+
