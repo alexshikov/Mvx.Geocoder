@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mvx.Plugins.Geocoder</id>
-    <version>1.2.0-beta</version>
+    <version>1.2.1</version>
     <title>MvvmCross - Geocoder Plugin</title>
     <authors>SeeD-Seifer</authors>
     <owners>SeeD-Seifer</owners>
@@ -12,7 +12,7 @@
     <description>This package contains the 'Geocoder' plugin for MvvmCross v4</description>
     <tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
     <dependencies>
-      <dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta4" />
+      <dependency id="MvvmCross.Core" version="4.0.0" />
     </dependencies>
   </metadata>
   <files>
@@ -26,7 +26,7 @@
 
     <!-- touch -->
     <file src="../Mvx.Geocoder/bin/Release/MvxPlugins.Geocoder.dll" target="lib/Xamarin.iOS10/MvxPlugins.Geocoder.dll" />
-    <file src="../Mvx.Geocoder.Touch/bin/Release/MvxPlugins.Geocoder.Touch.dll" target="lib/Xamarin.iOS10/MvxPlugins.Geocoder.Touch.dll" />
+    <file src="../Mvx.Geocoder.Touch/bin/Release/MvxPlugins.Geocoder.iOS.dll" target="lib/Xamarin.iOS10/MvxPlugins.Geocoder.iOS.dll" />
     <file src="TouchBootstrapContent/GeocoderPluginBootstrap.cs.pp" target="content/Xamarin.iOS10/Bootstrap/GeocoderPluginBootstrap.cs.pp" />
 
     <!-- phone -->
