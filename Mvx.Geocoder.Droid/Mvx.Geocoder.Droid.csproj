@@ -46,17 +46,13 @@
     <Reference Include="Cirrious.MvvmCross.Binding.Droid">
       <HintPath>..\packages\MvvmCross.HotTuna.Binding.4.0.0-beta4\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.4.0.0-beta4\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+    <Reference Include="MvvmCross.Platform.Droid">
+      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrious.MvvmCross.Binding">
-      <HintPath>..\packages\MvvmCross.HotTuna.Binding.4.0.0-beta4\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.4.0.0-beta4\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Plugin.cs" />
     <Compile Include="DroidGeocoder.cs" />
@@ -67,6 +63,7 @@
       <Name>Mvx.Geocoder</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using Cirrious.CrossCore.Plugins;
+﻿using MvvmCross.Platform.Plugins;
+using MvvmCross.Platform;
 
 namespace MvxPlugins.Geocoder
 {
@@ -8,7 +9,7 @@ namespace MvxPlugins.Geocoder
 
 		public void EnsureLoaded()
 		{
-			var manager = Cirrious.CrossCore.Mvx.Resolve<IMvxPluginManager>();
+			var manager = Mvx.Resolve<IMvxPluginManager>();
 			manager.EnsurePlatformAdaptionLoaded<PluginLoader>();
 		}
 	}

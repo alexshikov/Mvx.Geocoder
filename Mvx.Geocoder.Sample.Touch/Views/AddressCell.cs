@@ -4,9 +4,9 @@ using System.Drawing;
 
 using Foundation;
 using UIKit;
-using Cirrious.MvvmCross.Binding.Touch.Views;
-using Cirrious.MvvmCross.Binding.BindingContext;
 using MvxPlugins.Geocoder;
+using MvvmCross.Binding.iOS.Views;
+using MvvmCross.Binding.BindingContext;
 
 namespace Mvx.Geocoder.Sample.Touch.Views
 {
@@ -20,7 +20,9 @@ namespace Mvx.Geocoder.Sample.Touch.Views
 			get { return null; }
 			set
 			{
-				var address = string.Format ("{0}, {1}: {2}", value.Name, value.AdministrativeArea, value.PostalCode);
+				var address = value == null
+					? "<null>"
+					: string.Format ("{0}, {1}: {2}", value.Name, value.AdministrativeArea, value.PostalCode);
 				TextLabel.Text = address;
 			}
 		}

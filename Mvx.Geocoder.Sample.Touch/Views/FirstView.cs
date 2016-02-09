@@ -1,11 +1,11 @@
-using Cirrious.MvvmCross.Binding.BindingContext;
-using Cirrious.MvvmCross.Touch.Views;
+using System;
 using CoreGraphics;
 using Foundation;
 using ObjCRuntime;
 using UIKit;
-using Cirrious.MvvmCross.Binding.Touch.Views;
-using System;
+using MvvmCross.iOS.Views;
+using MvvmCross.Binding.iOS.Views;
+using MvvmCross.Binding.BindingContext;
 
 namespace Mvx.Geocoder.Sample.Touch.Views
 {

@@ -1,5 +1,5 @@
 ﻿using System;
-using Cirrious.CrossCore.Plugins;
+using MvvmCross.Platform.Plugins;
 
 namespace Mvx.Geocoder.Sample.Touch.Bootstrap
 {

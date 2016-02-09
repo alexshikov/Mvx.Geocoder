@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Specialized;
 using System.Windows.Input;
-using Cirrious.MvvmCross.Touch.Views;
 using Foundation;
 using UIKit;
+using MvvmCross.iOS.Views;
+using MvvmCross.Platform.IoC;
 
 namespace Mvx.Geocoder.Sample.Touch
 {
@@ -97,9 +98,9 @@ namespace Mvx.Geocoder.Sample.Touch
            command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
         }
 
-		public void Include(Cirrious.CrossCore.IoC.MvxPropertyInjector injector)
+		public void Include(MvxPropertyInjector injector)
 		{
-			injector = new Cirrious.CrossCore.IoC.MvxPropertyInjector();
+			injector = new MvxPropertyInjector();
 		} 
 
 		public void Include(System.ComponentModel.INotifyPropertyChanged changed)

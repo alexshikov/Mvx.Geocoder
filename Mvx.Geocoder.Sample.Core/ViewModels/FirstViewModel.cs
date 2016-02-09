@@ -1,4 +1,4 @@
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 using MvxPlugins.Geocoder;
 using System;

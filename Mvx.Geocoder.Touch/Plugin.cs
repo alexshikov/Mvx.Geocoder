@@ -1,4 +1,5 @@
-using Cirrious.CrossCore.Plugins;
+using MvvmCross.Platform.Plugins;
+using MvvmCross.Platform;
 
 namespace MvxPlugins.Geocoder.Touch
 {
@@ -7,7 +8,7 @@ namespace MvxPlugins.Geocoder.Touch
     {
         public void Load()
         {
-            Cirrious.CrossCore.Mvx.RegisterSingleton<IGeocoder>(new TouchGeocoder());
+            Mvx.RegisterSingleton<IGeocoder>(new TouchGeocoder());
         }
     }
 }

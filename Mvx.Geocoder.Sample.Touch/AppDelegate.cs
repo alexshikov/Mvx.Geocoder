@@ -4,8 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using Cirrious.MvvmCross.Touch.Platform;
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.iOS.Platform;
+using MvvmCross.Core.ViewModels;
 
 namespace Mvx.Geocoder.Sample.Touch
 {
@@ -33,7 +33,7 @@ namespace Mvx.Geocoder.Sample.Touch
 			var setup = new Setup(this, window);
 			setup.Initialize();
 
-			var startup = Cirrious.CrossCore.Mvx.Resolve<IMvxAppStart>();
+			var startup = MvvmCross.Platform.Mvx.Resolve<IMvxAppStart>();
 			startup.Start();
 
 			// make the window visible
