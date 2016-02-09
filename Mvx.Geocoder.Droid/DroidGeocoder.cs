@@ -1,5 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using MvvmCross.Platform;
+using MvvmCross.Platform.Droid;
 
 namespace MvxPlugins.Geocoder.Droid
 {
@@ -7,7 +9,7 @@ namespace MvxPlugins.Geocoder.Droid
     {
         public async Task<Address[]> GetAddressesAsync(double latitude, double longitude)
         {
-            var globals = Cirrious.CrossCore.Mvx.Resolve<Cirrious.CrossCore.Droid.IMvxAndroidGlobals>();
+            var globals = Mvx.Resolve<IMvxAndroidGlobals>();
             var geocoder = new Android.Locations.Geocoder(globals.ApplicationContext);
 
             var addresses = await geocoder.GetFromLocationAsync(latitude, longitude, 10);
@@ -17,7 +19,7 @@ namespace MvxPlugins.Geocoder.Droid
 
         public async Task<Address[]> GetAddressesAsync(string addressString)
         {
-            var globals = Cirrious.CrossCore.Mvx.Resolve<Cirrious.CrossCore.Droid.IMvxAndroidGlobals>();
+            var globals = Mvx.Resolve<IMvxAndroidGlobals>();
             var geocoder = new Android.Locations.Geocoder(globals.ApplicationContext);
 
             var addresses = await geocoder.GetFromLocationNameAsync(addressString, 10);

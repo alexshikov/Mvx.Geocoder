@@ -1,4 +1,5 @@
-﻿using Cirrious.CrossCore.Plugins;
+﻿using MvvmCross.Platform;
+using MvvmCross.Platform.Plugins;
 
 namespace MvxPlugins.Geocoder.Droid
 {
@@ -7,7 +8,7 @@ namespace MvxPlugins.Geocoder.Droid
     {
         public void Load()
         {
-            Cirrious.CrossCore.Mvx.RegisterSingleton<IGeocoder>(new DroidGeocoder());
+            Mvx.RegisterSingleton<IGeocoder>(new DroidGeocoder());
         }
     }
 }
