@@ -1,7 +1,7 @@
 using MvvmCross.Platform.Plugins;
 using MvvmCross.Platform;
 
-namespace MvxPlugins.Geocoder.Touch
+namespace MvxPlugins.Geocoder.iOS
 {
     public class Plugin
         : IMvxPlugin

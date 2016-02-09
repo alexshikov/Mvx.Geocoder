@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder", "Mvx.Geocoder\Mvx.Geocoder.csproj", "{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder.Touch", "Mvx.Geocoder.Touch\Mvx.Geocoder.Touch.csproj", "{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder.iOS", "Mvx.Geocoder.Touch\Mvx.Geocoder.iOS.csproj", "{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvx.Geocoder.Droid", "Mvx.Geocoder.Droid\Mvx.Geocoder.Droid.csproj", "{62F3258C-1E53-4510-BF27-E3AA0D355F2E}"
 EndProject

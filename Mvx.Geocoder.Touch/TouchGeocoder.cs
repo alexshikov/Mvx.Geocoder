@@ -4,7 +4,7 @@ using AddressBook;
 using CoreLocation;
 using Foundation;
 
-namespace MvxPlugins.Geocoder.Touch
+namespace MvxPlugins.Geocoder.iOS
 {
     public class TouchGeocoder : IGeocoder
     {
