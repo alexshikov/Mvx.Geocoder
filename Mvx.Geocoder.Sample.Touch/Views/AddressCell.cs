@@ -1,12 +1,8 @@
-﻿
-using System;
-using System.Drawing;
-
+﻿using System;
 using Foundation;
 using UIKit;
-using MvxPlugins.Geocoder;
-using MvvmCross.Binding.iOS.Views;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Ios.Binding.Views;
 
 namespace Mvx.Geocoder.Sample.Touch.Views
 {
@@ -17,12 +13,12 @@ namespace Mvx.Geocoder.Sample.Touch.Views
 
 		public Address Address
 		{
-			get { return null; }
+			get => null;
 			set
 			{
 				var address = value == null
 					? "<null>"
-					: string.Format ("{0}, {1}: {2}", value.Name, value.AdministrativeArea, value.PostalCode);
+					: $"{value.Name}, {value.AdministrativeArea}: {value.PostalCode}";
 				TextLabel.Text = address;
 			}
 		}

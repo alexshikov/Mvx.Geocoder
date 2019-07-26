@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
+using MvvmCross.Platforms.Ios.Core;
+using MvvmCross.ViewModels;
 using UIKit;
-using MvvmCross.iOS.Platform;
-using MvvmCross.Core.ViewModels;
 
 namespace Mvx.Geocoder.Sample.Touch
 {
@@ -16,7 +12,7 @@ namespace Mvx.Geocoder.Sample.Touch
 	public partial class AppDelegate : MvxApplicationDelegate
 	{
 		// class-level declarations
-		UIWindow window;
+		private UIWindow _window;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this
@@ -28,16 +24,16 @@ namespace Mvx.Geocoder.Sample.Touch
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
 			// create a new window instance based on the screen size
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			_window = new UIWindow (UIScreen.MainScreen.Bounds);
 			
-			var setup = new Setup(this, window);
-			setup.Initialize();
+			var setup = new Setup();
+			setup.PlatformInitialize(this, _window);
 
-			var startup = MvvmCross.Platform.Mvx.Resolve<IMvxAppStart>();
+			var startup = MvvmCross.Mvx.IoCProvider.Resolve<IMvxAppStart>();
 			startup.Start();
 
 			// make the window visible
-			window.MakeKeyAndVisible ();
+			_window.MakeKeyAndVisible ();
 			
 			return true;
 		}

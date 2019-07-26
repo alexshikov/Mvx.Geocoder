@@ -1,24 +1,22 @@
-using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
-using MvxPlugins.Geocoder;
 using System;
-using System.Diagnostics;
+using System.Threading.Tasks;
+using MvvmCross.ViewModels;
 
 namespace Mvx.Geocoder.Sample.Core.ViewModels
 {
-    public class FirstViewModel 
-		: MvxViewModel
-    {
+	public class FirstViewModel : MvxViewModel
+	{
 		#region NotifyProperty Search
 
-		private string _Search;
-
-		public string Search {
-			get { return _Search; }
-			set {
-				_Search = value;
-				RaisePropertyChanged (() => this.Search);
-				Refresh ();
+		private string _search;
+		public string Search
+		{
+			get => _search;
+			set
+			{
+				SetProperty(ref _search, value);
+				Refresh();
 			}
 		}
 
@@ -26,44 +24,38 @@ namespace Mvx.Geocoder.Sample.Core.ViewModels
 
 		#region NotifyProperty Items
 
-		private IList<Address> _Items;
-
-		public IList<Address> Items {
-			get { return _Items; }
-			set {
-				_Items = value;
-				RaisePropertyChanged (() => this.Items);
-			}
+		private IList<Address> _items;
+		public IList<Address> Items
+		{
+			get => _items;
+			set => SetProperty(ref _items, value);
 		}
 
 		#endregion
 
 		#region NotifyProperty Exception
 
-		private Exception _Exception;
-
-		public Exception Exception {
-			get { return _Exception; }
-			set {
-				_Exception = value;
-				RaisePropertyChanged (() => this.Exception);
-			}
+		private Exception _exception;
+		public Exception Exception
+		{
+			get => _exception;
+			set => SetProperty(ref _exception, value);
 		}
 
 		#endregion
 
-		private readonly IGeocoder geocoder;
+		private readonly IGeocoder _geocoder;
 
-		public FirstViewModel (IGeocoder geocoder)
+		public FirstViewModel(IGeocoder geocoder)
 		{
-			this.geocoder = geocoder;
+			_geocoder = geocoder;
 		}
 
-		private async void Refresh ()
+		private async Task Refresh()
 		{
-			try 
+			try
 			{
-				Items = await geocoder.GetAddressesAsync (Search).ConfigureAwait (false);
+				Items = await _geocoder.GetAddressesAsync(Search).ConfigureAwait(false);
 			}
 			catch (Exception e)
 			{
@@ -71,5 +63,5 @@ namespace Mvx.Geocoder.Sample.Core.ViewModels
 				Items = null;
 			}
 		}
-    }
+	}
 }
