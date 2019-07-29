@@ -1,1 +1,1 @@
-nuget push Mvx.Plugins.Geocoder.1.2.1.nupkg
+nuget push Mvx.Plugins.Geocoder.2.0.0.nupkg -source https://api.nuget.org/v3/index.json

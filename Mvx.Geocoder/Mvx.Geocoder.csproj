@@ -41,15 +41,19 @@
 	<PropertyGroup>
 		<AssemblyName>Mvx.Geocoder</AssemblyName>
 		<RootNamespace>Mvx.Geocoder</RootNamespace>
-		<Description>This package contains the 'PhoneCall' plugin for MvvmCross
-		</Description>
 		<PackageId>Mvx.Geocoder</PackageId>
-		<PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+		<Title>MvvmCross - Geocoder Plugin</Title>
+		<Description>This package contains the 'Geocoder' plugin for MvvmCross</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/alexshikov/Mvx.Geocoder</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/alexshikov/Mvx.Geocoder</RepositoryUrl>
-		<PackageTags>Geocoder;mvvmcross;mvx.geocoder</PackageTags>
+		<PackageTags>mvvmcross;mvx;geocoder;xamarin</PackageTags>
 		<NeutralLanguage>en</NeutralLanguage>
+		<Authors>Alexey Shikov, Anton Tereshko</Authors>
+		<Owners>Alexey Shikov</Owners>
+		<PackageVersion>2.0.0</PackageVersion>
+		<PackageReleaseNotes>Updated MvvmCross reference from 4.x to 6.3.1</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
