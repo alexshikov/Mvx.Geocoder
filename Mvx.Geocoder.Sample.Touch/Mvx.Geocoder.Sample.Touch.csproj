@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -91,34 +91,19 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MvvmCross, Version=6.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.6.3.1\lib\xamarinios10\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="MvvmCross.Platform.iOS">
-      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Platform">
-      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.iOS">
-      <HintPath>..\packages\MvvmCross.Core.4.0.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Core">
-      <HintPath>..\packages\MvvmCross.Core.4.0.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Binding.iOS">
-      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Binding">
-      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Localization">
-      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -132,31 +117,23 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Setup.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Views\AddressCell.cs" />
     <Compile Include="Views\AddressCell.designer.cs">
       <DependentUpon>AddressCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bootstrap\GeocoderPluginBootstrap.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Mvx.Geocoder\Mvx.Geocoder.csproj">
-      <Project>{8B2B460C-7F28-43C7-A017-A9C17A47FFDC}</Project>
-      <Name>Mvx.Geocoder</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Mvx.Geocoder.Sample.Core\Mvx.Geocoder.Sample.Core.csproj">
-      <Project>{29E5FA89-93B0-430D-A6DD-5E1CD4C3A13D}</Project>
+      <Project>{c852f723-f4b7-4db7-a1f6-45596002da92}</Project>
       <Name>Mvx.Geocoder.Sample.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Mvx.Geocoder.Touch\Mvx.Geocoder.iOS.csproj">
-      <Project>{9F0CEBBB-FD18-47DB-95EE-D87A5689F2D8}</Project>
-      <Name>Mvx.Geocoder.iOS</Name>
+    <ProjectReference Include="..\Mvx.Geocoder\Mvx.Geocoder.csproj">
+      <Project>{5eb395fa-a8c7-40ef-9d1f-78fa2b4e469e}</Project>
+      <Name>Mvx.Geocoder</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bootstrap\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

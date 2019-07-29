@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Specialized;
 using System.Windows.Input;
 using Foundation;
+using MvvmCross.IoC;
+using MvvmCross.Platforms.Ios.Views;
 using UIKit;
-using MvvmCross.iOS.Views;
-using MvvmCross.Platform.IoC;
 
 namespace Mvx.Geocoder.Sample.Touch
 {

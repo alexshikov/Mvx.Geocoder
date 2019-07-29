@@ -1,4 +1,4 @@
-﻿namespace MvxPlugins.Geocoder
+﻿namespace Mvx.Geocoder
 {
 	public class Address
 	{

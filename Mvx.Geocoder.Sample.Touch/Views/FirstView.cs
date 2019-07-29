@@ -1,11 +1,10 @@
 using System;
-using CoreGraphics;
 using Foundation;
-using ObjCRuntime;
 using UIKit;
-using MvvmCross.iOS.Views;
-using MvvmCross.Binding.iOS.Views;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Ios.Binding.Views;
+using MvvmCross.Platforms.Ios.Views;
+using Mvx.Geocoder.Sample.Core.ViewModels;
 
 namespace Mvx.Geocoder.Sample.Touch.Views
 {
@@ -17,15 +16,14 @@ namespace Mvx.Geocoder.Sample.Touch.Views
 			get { return null; }
 			set
 			{
-				var nsError = value as NSErrorException;
-				if (nsError != null)
-				{
-					if (nsError.Domain == "kCLErrorDomain")
-					{
-						var code = (CoreLocation.CLError)(int)nsError.Code;
-						Console.WriteLine ("---- CL.Error: " + code);
-					}
-				}
+				if (!(value is NSErrorException nsError))
+					return;
+
+				if (nsError.Domain != "kCLErrorDomain")
+					return;
+
+				var code = (CoreLocation.CLError)(int)nsError.Code;
+				Console.WriteLine ("---- CL.Error: " + code);
 			}
 		}
 
@@ -42,7 +40,7 @@ namespace Mvx.Geocoder.Sample.Touch.Views
 			var search = new UISearchBar ();
 			NavigationItem.TitleView = search;
 
-            var set = this.CreateBindingSet<FirstView, Core.ViewModels.FirstViewModel>();
+            var set = this.CreateBindingSet<FirstView, FirstViewModel>();
 			set.Bind(source).To(vm => vm.Items);
 			set.Bind(search).To(vm => vm.Search);
 			set.Bind (this).For (v => v.Exception).To (vm => vm.Exception);
