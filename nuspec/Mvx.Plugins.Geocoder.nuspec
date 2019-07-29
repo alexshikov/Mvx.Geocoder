@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mvx.Plugins.Geocoder</id>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <title>MvvmCross - Geocoder Plugin</title>
     <authors>SeeD-Seifer</authors>
     <owners>SeeD-Seifer</owners>
@@ -12,7 +12,7 @@
     <description>This package contains the 'Geocoder' plugin for MvvmCross v6</description>
     <tags>mvvm mvvmcross mvx xamarin geocoder geocoding</tags>
     <dependencies>
-      <dependency id="MvvmCross.Core" version="6.3.1" />
+      <dependency id="MvvmCross" version="6.3.1" />
     </dependencies>
   </metadata>
   <files>
