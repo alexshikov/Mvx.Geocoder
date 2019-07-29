@@ -3,16 +3,13 @@ using MvvmCross.Plugin;
 
 namespace Mvx.Geocoder.Platforms.Ios
 {
-	namespace Mvx.Geocoder.Platforms.Android
+	[MvxPlugin]
+	[Preserve(AllMembers = true)]
+	public class Plugin : IMvxPlugin
 	{
-		[MvxPlugin]
-		[Preserve(AllMembers = true)]
-		public class Plugin : IMvxPlugin
+		public void Load()
 		{
-			public void Load()
-			{
-				MvvmCross.Mvx.IoCProvider.RegisterType<IGeocoder, MvxGeocoder>();
-			}
+			MvvmCross.Mvx.IoCProvider.RegisterType<IGeocoder, MvxGeocoder>();
 		}
 	}
 }

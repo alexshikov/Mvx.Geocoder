@@ -9,13 +9,13 @@ namespace Mvx.Geocoder.Sample.Core.ViewModels
 	{
 		#region NotifyProperty Search
 
-		private string _search;
+		private string search;
 		public string Search
 		{
-			get => _search;
+			get => search;
 			set
 			{
-				SetProperty(ref _search, value);
+				SetProperty(ref search, value);
 				Refresh();
 			}
 		}
@@ -24,38 +24,38 @@ namespace Mvx.Geocoder.Sample.Core.ViewModels
 
 		#region NotifyProperty Items
 
-		private IList<Address> _items;
+		private IList<Address> items;
 		public IList<Address> Items
 		{
-			get => _items;
-			set => SetProperty(ref _items, value);
+			get => items;
+			set => SetProperty(ref items, value);
 		}
 
 		#endregion
 
 		#region NotifyProperty Exception
 
-		private Exception _exception;
+		private Exception exception;
 		public Exception Exception
 		{
-			get => _exception;
-			set => SetProperty(ref _exception, value);
+			get => exception;
+			set => SetProperty(ref exception, value);
 		}
 
 		#endregion
 
-		private readonly IGeocoder _geocoder;
+		private readonly IGeocoder geocoder;
 
 		public FirstViewModel(IGeocoder geocoder)
 		{
-			_geocoder = geocoder;
+			this.geocoder = geocoder;
 		}
 
 		private async Task Refresh()
 		{
 			try
 			{
-				Items = await _geocoder.GetAddressesAsync(Search).ConfigureAwait(false);
+				Items = await geocoder.GetAddressesAsync(Search).ConfigureAwait(false);
 			}
 			catch (Exception e)
 			{
